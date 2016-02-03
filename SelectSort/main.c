@@ -29,11 +29,13 @@ void selectSort(int *a,int n){
     for (i = 0; i < n; i++) {
 
         minIndex = i;
+        //从无序区中找出最小的数
         for (j = i + 1; j < n; j++) {
             if (a[j] < a[minIndex]) {
                 minIndex = j;
             }
         }
+        //把无序区中最小的数放到有序区的最后一个位置；
         swap(&a[i],&a[minIndex]);
     }
 }
