@@ -32,6 +32,7 @@ void selectSort(int *a,int n){
         //从无序区中找出最小的数
         for (j = i + 1; j < n; j++) {
             if (a[j] < a[minIndex]) {
+                //不断记录最小数的下标；
                 minIndex = j;
             }
         }
