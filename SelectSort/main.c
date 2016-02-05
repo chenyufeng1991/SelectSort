@@ -28,6 +28,7 @@ void selectSort(int *a,int n){
     int i,j,minIndex;
     for (i = 0; i < n; i++) {
 
+        //首先假设下标为i的数是无序数组中最小的数；
         minIndex = i;
         //从无序区中找出最小的数
         for (j = i + 1; j < n; j++) {
